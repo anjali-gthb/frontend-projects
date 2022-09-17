@@ -1,0 +1,257 @@
+@import url("https://fonts.googleapis.com/css2?family=Lobster&family=Montserrat:wght@300;400;500;700&family=Notable&family=Open+Sans:wght@300&family=Supermercado+One&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+}
+html {
+  font-size: 62.5%;
+}
+.header {
+  height: 95vh;
+  background: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)),url("/Img/pexels-allan-franca-carmo-3465604.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+}
+.navbar a,
+.navbar a:visited {
+  color: #f4f4f4;
+}
+.navbar .logo {
+  float: left;
+  width: 10%;
+  background-color: white;
+}
+ .navbar .nav-items {
+  float: right;
+  margin-top: 1rem;
+}
+.nav-items .nav-item {
+  display: inline-block;
+  padding: 1rem;
+  text-transform: uppercase;
+}
+.navbar {
+  padding: 1rem;
+}
+a {
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+.navbar::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+p,
+li {
+  font-size: 1.6rem;
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+}
+h1,
+h2,
+h3 {
+  margin-bottom: 0.5em;
+  letter-spacing: 0.15em;
+  font-weight: 500;
+}
+
+/* ############### utility classes ############# */
+.container {
+  max-width: 900px;
+  width: 85%;
+  margin: 0 auto;
+}
+.lg-heading {
+  font-size: 3.5rem;
+}
+.md-heading {
+  font-size: 2.2rem;
+}
+.text-red {
+  color: #e63946;
+}
+.text-light {
+  color: #f4f4f4;
+}
+.text-black {
+  color: #333333;
+}
+.text-grey {
+  color: #555;
+}
+.bg-dark{
+  background-color: #263238;
+}
+.navbar a {
+  padding: 0.4rem;
+}
+.navbar a:hover {
+  border-bottom: 2px solid white;
+}
+.header-content h1 {
+  text-transform: uppercase;
+  font-weight: 700;
+}
+.header-content p {
+  text-transform: uppercase;
+}
+.btn {
+  display: inline-block;
+  padding: 0.5em 1.5em;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin: 0.5em 0;
+}
+.btn-primary {
+  background-color: #fff;
+  border-radius: 10em;
+}
+.btn-primary:hover{
+    background-color: #ddd;
+}
+.btn-secondary{
+    border:2px solid #e63946;
+    border-radius: 1.5em;
+    color: #e63946;
+    background: white;
+}
+.btn-secondary:hover{
+    background: #fcf3f2;
+}
+
+.header-content {
+  text-align: center;
+
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2));
+}
+/* ######################## showcase section styling ############################ */
+.showcase {
+  background: #ddd;
+  padding: 8rem 0; 
+  
+  
+}
+.row {
+  height: 350px;
+  background: #fff;
+  box-shadow: 0px 0px 20px 0px #aaa;
+}
+.row1{
+  margin-bottom:10rem;
+}
+
+.row1 .img-box,
+.row2 .text-box {
+  float: left;
+  width: 50%;
+}
+.row2 .img-box,
+.row1 .text-box {
+  float: right;
+  width: 50%;
+}
+.row .img-box {
+  height: 100%;
+}
+.row .text-box {
+  padding: 3rem;
+}
+.row .img-box img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.row::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+/* ####################### styling of feature section ################### */
+section.feature{
+background:white;
+padding: 10rem 0;
+ 
+}
+.box{
+ 
+  height: 53rem;
+  width: 33.33%;
+  float: left;
+  text-align: center;
+  padding: 3em 2em;
+  
+}
+.box1,.box3{
+  background-color: #263238;
+  color: white;
+}
+.box2{
+  background: linear-gradient(25deg,#d64c7f,#ee4758 50%);
+  color: white;
+}
+.feature::after{
+  content: "";
+  display: block;
+  clear: both;
+
+}
+
+.text-feature .heading{
+  
+  text-transform:uppercase ;
+  padding-bottom: 10%;
+}
+.img-feature{
+  margin: 5rem 0;
+  height: 20rem;
+ 
+}
+.img-feature img{
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.box-wrapper{
+   box-shadow: 5px 5px 10px rgba(102,102,102, 0.521);
+}
+
+/* ################ styling of footer ###################### */
+footer{
+ background: #263238;
+ color: #f4f4f4;
+ padding: 2rem;
+ height: 13rem;
+ text-align: center;
+}
+.icons i{
+ margin: 2rem;
+}
+footer p{
+  text-align: center;
+}
+
+/* ##################  ABOUT PAGE STYLING #################### */
+.about {
+  padding: 5rem 0rem;
+}
+.about .container h2::after{
+  content:"";
+  display: block;
+  border:3px solid #e63946;
+  width: 100%;
+}
