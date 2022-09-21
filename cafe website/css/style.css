@@ -185,7 +185,7 @@ section.feature {
   padding: 10rem 0;
 }
 .box {
-  height: 53rem;
+  max-height: 60rem;
   width: 33.33%;
   float: left;
   text-align: center;
@@ -232,14 +232,20 @@ section.feature {
 footer {
   background: #263238;
   color: #f4f4f4;
-  padding: 2rem;
-  height: 13rem;
+  padding: 1rem;
+  height: 14rem;
   text-align: center;
+  /* margin-bottom: 1rem; */
 }
+
 .icons i {
   margin: 2rem;
+
 }
-footer p {
+footer .footer-p{
+  margin: 1rem;
+}
+footer .footer-p p {
   text-align: center;
 }
 
@@ -441,6 +447,10 @@ footer p {
     width: 100%;
     text-align: center;
   }
+  .footer{
+      height: auto;
+     
+  }
   .feature .box {
     float: none;
     width: 100%;
@@ -480,9 +490,17 @@ footer p {
     width: 100%;
     height: auto;
   }
+  .counts .count-item p {
+   font-size: 9px;
+   }
+   .count-item span {
+    font-size: 2rem;
+    font-weight: 700;
+    color: #e63946;
+  }
 }
 
-@media (min-width: 501px) and (max-width: 768px) {
+@media (min-width: 501px) and (max-width: 921px) {
   html {
     font-size: 50%;
   }
@@ -544,8 +562,9 @@ footer p {
     width: 100%;
     height: auto;
   }
+ 
 }
-@media (min-width: 769px) and (max-width: 1200px) {
+@media (min-width: 923px) and (max-width: 1200px) {
   html {
     font-size: 56.25%;
   }
